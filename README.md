@@ -178,13 +178,37 @@ Homingo-AI-Chief-of-Staff
 
 ---
 
+## 📌 Current Development Roadmap
+
+### Phase 1
+- [ ] Project Setup
+- [ ] Frontend Dashboard
+- [ ] FastAPI Backend
+
+### Phase 2
+- [ ] Email Agent
+- [ ] Task Agent
+- [ ] Calendar Agent
+- [ ] Reminder Agent
+
+### Phase 3
+- [ ] AI Agent Orchestration
+- [ ] Dashboard Integration
+- [ ] User Authentication
+
+### Phase 4
+- [ ] Deployment
+- [ ] Final Demo
+- [ ] Hackathon Submission
+
+---
+
 ## 👥 Team
 
 ### Team Members
 
 - Priyanka Dutta
-- Team Member 2
-- Team Member 3
+- Bipasha Saha
 
 ---
 
