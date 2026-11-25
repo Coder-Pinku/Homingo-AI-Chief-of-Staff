@@ -1,119 +1,138 @@
 # Homingo AI Chief of Staff
 
-> Your personal executive assistant, powered by AI.
+> Your Personal Executive Assistant, Powered by AI
 
-## 🚀 Vision
+## 🚀 Overview
 
-Wealthy individuals have assistants, accountants, schedulers, and advisors who help manage their daily responsibilities.
+Everyone deserves a personal chief of staff.
 
-Everyone else manages emails, appointments, bills, reminders, forms, and tasks on their own.
+Managing emails, appointments, reminders, bills, schedules, and daily tasks consumes a significant portion of people's time and attention. While executives often rely on personal assistants to stay organized, most individuals must manage these responsibilities on their own.
 
-**Homingo AI Chief of Staff** is an intelligent multi-agent system designed to give every person their own trusted digital chief of staff. Instead of simply answering questions, it actively helps users organize, prioritize, and manage their daily lives.
+**Homingo AI Chief of Staff** is an intelligent AI-powered assistant designed to help users organize, prioritize, and manage their personal and professional lives through a unified dashboard and agentic workflow.
+
+Developed for the **Homingo Hack Days - Problem Statement A3: Personal Staff for Everyone.**
 
 ---
 
 ## 🎯 Problem Statement
 
-This project is built for the **Homingo Hack Days - A3: Personal Staff for Everyone** challenge.
+Modern users interact with multiple platforms every day:
 
-Modern life requires constant attention to:
+- Email applications
+- Calendars
+- To-do lists
+- Reminder systems
+- Scheduling tools
 
-- Emails
-- Meetings
-- Appointments
-- Bills and payments
-- Reminders
-- Personal administration
+Important tasks are often scattered across these services, making it difficult to stay organized and productive.
 
-These responsibilities are fragmented across multiple apps and often consume significant time and attention.
-
----
-
-## 💡 Our Solution
-
-Homingo AI Chief of Staff acts as a centralized personal operations manager that:
-
-✅ Understands incoming tasks
-
-✅ Prioritizes responsibilities
-
-✅ Organizes schedules and reminders
-
-✅ Summarizes important information
-
-✅ Helps users make better decisions
-
-✅ Reduces administrative workload
-
-The goal is simple:
-
-**Give every individual access to a personal chief of staff, regardless of income or background.**
+Our goal is to create a unified AI-powered personal staff that acts as a trusted assistant capable of understanding, organizing, and managing everyday responsibilities.
 
 ---
 
-## 🧠 Key Features
+## 💡 Solution
 
-### 📧 Email Intelligence
-- Smart email categorization
-- AI-generated summaries
+Homingo AI Chief of Staff serves as a personal operations manager that:
+
+✅ Summarizes and prioritizes emails
+
+✅ Extracts actionable tasks
+
+✅ Creates reminders automatically
+
+✅ Manages schedules and appointments
+
+✅ Provides intelligent daily briefings
+
+✅ Helps users stay organized from a single interface
+
+Rather than forcing users to manage multiple applications, our solution delivers a centralized AI experience.
+
+---
+
+## 🧠 Agent Architecture
+
+The user interacts with a single AI assistant.
+
+Internally, the system uses a hierarchical agent architecture:
+
+```text
+User
+  │
+  ▼
+AI Chief of Staff
+  │
+  ├── Email Agent
+  ├── Task Agent
+  ├── Calendar Agent
+  └── Reminder Agent
+```
+
+The Chief of Staff Agent acts as the coordinator that delegates responsibilities to specialized agents and combines their outputs into a seamless user experience.
+
+---
+
+## 🏗 System Architecture
+
+```text
+User
+  │
+  ▼
+React Dashboard
+  │
+  ▼
+FastAPI Backend
+  │
+  ▼
+Chief of Staff Agent
+  │
+  ├── Email Agent
+  ├── Task Agent
+  ├── Calendar Agent
+  └── Reminder Agent
+  │
+  ▼
+Gemini / OpenAI
+  │
+  ▼
+SQLite Database
+```
+
+---
+
+## ✨ Key Features
+
+### 📧 Email Agent
+- Email summarization
 - Action item extraction
+- Priority detection
 
-### ✅ Task Management
-- Automatic task creation
-- Priority-based organization
-- Intelligent reminders
+### ✅ Task Agent
+- Smart task creation
+- Task prioritization
+- Progress tracking
 
-### 📅 Smart Scheduling
-- Appointment management
-- Calendar integration
+### 📅 Calendar Agent
+- Appointment scheduling
+- Calendar management
 - Conflict detection
 
-### 🔔 Personal Briefings
-- Daily summaries
-- Upcoming deadlines
-- Important reminders
+### 🔔 Reminder Agent
+- Deadline reminders
+- Daily briefings
+- Smart notifications
 
-### 🤖 Multi-Agent Architecture
-Specialized AI agents collaborate to handle different responsibilities:
-
-- Email Agent
-- Task Agent
-- Calendar Agent
-- Reminder Agent
-- Coordinator Agent
+### 🎯 Chief of Staff Agent
+- Intent understanding
+- Agent orchestration
+- Unified decision-making
 
 ---
 
-## 🏗️ System Architecture
-
-User
-
-↓
-
-Chief of Staff Agent
-
-↓
-
-├── Email Agent
-
-├── Task Agent
-
-├── Calendar Agent
-
-├── Reminder Agent
-
-└── Knowledge Agent
-
-↓
-
-Unified Personal Dashboard
-
----
-
-## 🛠️ Tech Stack
+## 🛠 Technology Stack
 
 ### Frontend
-- React
+- React.js
 - Tailwind CSS
 
 ### Backend
@@ -121,29 +140,47 @@ Unified Personal Dashboard
 - Python
 
 ### AI Layer
-- Gemini API / OpenAI
+- Gemini API / OpenAI API
 
 ### Database
 - SQLite
 
-### Deployment
-- Vercel
-- Render
+### Version Control
+- Git
+- GitHub
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-frontend/
-backend/
-docs/
-assets/
+Homingo-AI-Chief-of-Staff
+│
+├── frontend/
+│
+├── backend/
+│   ├── agents/
+│   │   ├── chief_agent.py
+│   │   ├── email_agent.py
+│   │   ├── task_agent.py
+│   │   ├── calendar_agent.py
+│   │   └── reminder_agent.py
+│   │
+│   ├── api/
+│   └── services/
+│
+├── docs/
+│
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
 ```
 
 ---
 
 ## 👥 Team
+
+### Team Members
 
 - Priyanka Dutta
 - Team Member 2
@@ -151,18 +188,18 @@ assets/
 
 ---
 
-## 🌟 Future Vision
+## 🌍 Vision
 
-We believe AI should not just answer questions.
+We believe AI should do more than answer questions.
 
 AI should help people manage their lives.
 
-Homingo AI Chief of Staff is a step toward a future where everyone has access to a trusted personal assistant capable of handling everyday responsibilities efficiently, securely, and intelligently.
+Homingo AI Chief of Staff aims to bring the benefits of a personal executive assistant to everyone through intelligent automation, proactive assistance, and seamless coordination.
 
 ---
 
 ## 🚧 Project Status
 
-Currently under active development for Homingo Hack Days.
+🔨 Currently under development for Homingo Hack Days 2026.
 
-Stay tuned for live demonstrations, architecture updates, and feature releases.
+Stay tuned for updates, demos, and feature releases.
