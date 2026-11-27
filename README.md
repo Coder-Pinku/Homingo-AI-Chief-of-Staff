@@ -157,7 +157,13 @@ SQLite Database
 Homingo-AI-Chief-of-Staff
 │
 ├── frontend/
-│
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── package.json
+|
 ├── backend/
 │   ├── agents/
 │   │   ├── chief_agent.py
@@ -166,11 +172,43 @@ Homingo-AI-Chief-of-Staff
 │   │   ├── calendar_agent.py
 │   │   └── reminder_agent.py
 │   │
+|   ├── tools/
+│   │   ├── gmail_tools.py
+│   │   ├── calendar_tools.py
+│   │   ├── task_tools.py
+│   │   └── reminder_tools.py
+│   │
+│   ├── memory/
+│   │   ├── short_term.py
+│   │   └── long_term.py
+│   │
 │   ├── api/
-│   └── services/
+│   │   ├── chat.py
+│   │   ├── tasks.py
+│   │   ├── calendar.py
+│   │   └── auth.py
+│   │
+│   ├── services/
+│   │   ├── email_service.py
+│   │   ├── calendar_service.py
+│   │   └── notification_service.py
+│   │
+│   ├── security/
+│   │   ├── permissions.py
+│   │   └── authentication.py
+│   │
+│   ├── database/
+│   │   ├── models.py
+│   │   └── database.py
+│   │
+│   └── evaluation/
+│       └── benchmark.py   
 │
 ├── docs/
-│
+│   ├── architecture.md
+│   ├── research_methodology.md
+│   └── api_documentation.md
+|
 ├── README.md
 ├── CONTRIBUTING.md
 └── LICENSE
